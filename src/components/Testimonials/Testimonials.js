@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./Testimonials.css";
-import {
-  testimonialsData,
-  TestimonialsData,
-} from "../../data/testimonialsData";
+import { testimonialsData } from "../../data/testimonialsData";
 import rightArrow from "../../assets/rightArrow.png";
 import leftArrow from "../../assets/leftArrow.png";
 import { motion } from "framer-motion";
@@ -52,7 +49,7 @@ const Testimonials = () => {
           exit={{ opacity: 0, x: -100 }}
           transition={transition}
           src={testimonialsData[selected].image}
-          alt=""
+          alt="motion"
         />
         <div className="arrows">
           <img
@@ -62,7 +59,7 @@ const Testimonials = () => {
                 : setSelected((prev) => prev - 1);
             }}
             src={leftArrow}
-            alt=""
+            alt="left arrow"
           />
           <img
             onClick={() => {
@@ -71,7 +68,7 @@ const Testimonials = () => {
                 : setSelected((prev) => prev + 1);
             }}
             src={rightArrow}
-            alt=""
+            alt="right arrow"
           />
         </div>
       </div>

@@ -1,27 +1,7 @@
-import React, { useRef } from "react";
+import React from "react";
 import "./Join.css";
-import emailjs from "@emailjs/browser";
 
 const Join = () => {
-  // const form = useRef(null);
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs
-  //     .sendForm(
-  //       "service_xwip4zd",
-  //       "service_xwip4zd",
-  //       form.current,
-  //       "r_imbGCCc6aq50kJB"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
   return (
     <div className="Join" id="join">
       <div className="left-j">
